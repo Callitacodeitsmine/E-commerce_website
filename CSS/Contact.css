@@ -1,0 +1,95 @@
+
+.flex-con-product {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000;
+}
+
+.flex-box-product {
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(var(--Firefly), black);
+    margin: 10px;
+    display: flex;
+    color: aliceblue;
+    text-align: left;
+    border: #3ebdb9 2px solid;
+    margin-bottom: 70px;
+    border-radius: 20px;
+}
+
+.flex-box-product button {
+    width: 110px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: var(--Firefly);
+    background-image: linear-gradient(to bottom, var(--Firefly), var(--Ming));
+    border-radius: 6px;
+    cursor: pointer;
+    color: azure;
+}
+
+.flex-box-product img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.flex-box-product p {
+    color: var(--Puerto-rico);
+    border: #0000 18px solid;
+    font-style: uppercase;
+}
+
+.headding2 {
+    color: azure;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.headding2 h2 {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .flex-box-product {
+        width: 200px;
+        height: 150px;
+        margin-bottom: 70px;
+    }
+
+    .flex-box-product p {
+        font-size: 10px;
+    }
+
+    .flex-box-product img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flex-box-product button {
+        width: 50px;
+        font-size: 7px;
+    }
+
+    .headding2 {
+        margin: 30px 0;
+    }
+
+    .headding2 h2 {
+        font-size: 10px;
+    }
+
+    .headding2 p {
+        font-size: 5px;
+    }
+
+
+}

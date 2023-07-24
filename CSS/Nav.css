@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --Martain: #b4a2a2;
+    --Firefly: #0f2730;
+    --Puerto-rico: #3ebdb9;
+    --Ming: #357982;
+    --Don-Juan: #5d454d;
+}
+
+body{
+    background-image: linear-gradient( to right, black, var(--Firefly));
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: var(--Puerto-rico);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--Ming);
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+    background-color: var(--Puerto-rico);
+    border-radius: 50%;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--Puerto-rico);
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: var(--Ming);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    nav ul {
+        width: 100%;
+        background-image: linear-gradient(to bottom, var(--Firefly), var(--Ming));
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: var(--Firefly);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menulist {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
